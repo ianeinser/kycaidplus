@@ -1,5 +1,10 @@
+require "faraday"
+require "json"
+require "ostruct"
+
 require "kycaid/version"
 require "kycaid/configuration"
+require "kycaid/client"
 
 module KYCAID
   class Error < StandardError; end
