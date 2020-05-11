@@ -20,7 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Configure the gem using your issued KYCAID credentials in an initializer file. For example, in config/initializers/kycaid.rb:
+
+KYCAID.configure do |config|
+  config.authorization_token = ENV['KYCAID_AUTHORIZATION_TOKEN']
+  config.sandbox_mode = ENV['KYCAID_SANDBOX_MODE']
+end
 
 ## Development
 
