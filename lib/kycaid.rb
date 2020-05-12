@@ -5,6 +5,11 @@ require "ostruct"
 require "kycaid/version"
 require "kycaid/configuration"
 require "kycaid/client"
+require "kycaid/applicant"
+require "kycaid/file"
+require "kycaid/document"
+require "kycaid/address"
+require "kycaid/verification"
 
 module KYCAID
   class Error < StandardError; end
