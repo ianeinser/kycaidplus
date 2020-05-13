@@ -1,5 +1,5 @@
 module KYCAID
-  module Verification
+  class Verification < OpenStruct
     extend Client
 
     def self.create(params)

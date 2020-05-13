@@ -1,9 +1,9 @@
 module KYCAID
-  module File
+  class File < OpenStruct
     extend Client
 
     def self.create(params)
-      response = file_post("/files", params.slice(:file))
+      response = file_post("/files", params.slice(:tempfile, :content_type, :original_filename))
       new(JSON.parse(response.body))
     end
 

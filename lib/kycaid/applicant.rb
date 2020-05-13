@@ -3,7 +3,7 @@ module KYCAID
     extend Client
 
     def self.create(params)
-      protected_params = params.slice(:type, :first_name, :last_name, :dob, :residence_country, :email)
+      protected_params = params.slice(:type, :first_name, :last_name, :dob, :residence_country, :email, :phone)
       response = post("/applicants", protected_params)
       new(JSON.parse(response.body))
     end
