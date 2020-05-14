@@ -8,7 +8,7 @@ module KYCAID
       new(JSON.parse(response.body))
     end
 
-    def self.fetch(applicant_id)
+    def self.fetch(verification_id)
       response = get("/verifications/#{verification_id}")
       new(JSON.parse(response.body))
     end

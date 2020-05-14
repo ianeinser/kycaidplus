@@ -24,7 +24,7 @@ module KYCAID
         tempfile: params[:tempfile],
         content_type: "image/#{params[:file_extension]}",
         original_filename: params[:file_name]
-      )
+      ).file_id
     end
 
     def initialize(response)
