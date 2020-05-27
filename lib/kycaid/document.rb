@@ -3,8 +3,8 @@ module KYCAID
     extend Client
 
     def self.create(params)
-      front_file_id = file_params(params[:front_file]) unless params[:front_file].compact.empty?
-      back_file_id = file_params(params[:back_file]) unless params[:back_file].compact.empty?
+      front_file_id = file_params(params[:front_file]) unless params[:front_file].nil?
+      back_file_id = file_params(params[:back_file]) unless params[:back_file].nil?
 
       protected_params = params.slice(:applicant_id, :type, :document_number, :issue_date, :expiry_date)
                                .merge(front_side_id: front_file_id, back_side_id: back_file_id)
