@@ -19,8 +19,8 @@ steps:
       - mkdir -p ~/.gem
       - echo $GEM_CREDENTIALS | base64 -d > ~/.gem/credentials
       - chmod 0600 ~/.gem/credentials
-      - gem build peatio.gemspec
-      - gem push peatio-*.gem
+      - gem build kycaid.gemspec
+      - gem push kycaid*.gem
     when:
       branch:
         - master
