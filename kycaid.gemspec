@@ -6,14 +6,13 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Openware"]
   spec.email         = ["hello@openware.com"]
 
-  spec.summary       = %q{Openware ruby library to interact with KYCAID.}
-  spec.description   = %q{Support of core functionality of KYC provider}
-  spec.homepage      = "https://www.openware.com/"
+  spec.summary       = %q{kycaid.com ruby library.}
+  spec.description   = %q{Support of core functionalities of the KYC provider kycaid.com}
+  spec.homepage      = "https://www.kycaid.com/"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/openware/kycaid"
-  spec.metadata["changelog_uri"] = "https://github.com/openware/kycaid/blob/master/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/openware/kycaid-ruby"
 
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
