@@ -7,7 +7,7 @@ Ruby gem to interact with KYC provider https://www.kycaid.com/
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ruby-kycaid'
+gem 'kycaid'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install ruby-kycaid
+    $ gem install kycaid
 
 ## Usage
 
