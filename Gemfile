@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in kycaid.gemspec
+# Specify your gem's dependencies in kycaidplus.gemspec
 gemspec

@@ -1,4 +1,4 @@
-# Ruby KYCAID
+# Ruby KYCAIDPLUS
 
 Ruby gem to interact with KYC provider https://www.kycaid.com/
 
@@ -7,7 +7,7 @@ Ruby gem to interact with KYC provider https://www.kycaid.com/
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'kycaid'
+gem 'kycaidplus'
 ```
 
 And then execute:
@@ -16,16 +16,16 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install kycaid
+    $ gem install kycaidplus
 
 ## Usage
 
-Configure the gem using your issued KYCAID credentials in an initializer file. For example, in config/initializers/kycaid.rb:
+Configure the gem using your issued KYCAIDPLUS credentials in an initializer file. For example, in config/initializers/kycaidplus.rb:
 
 ```
-KYCAID.configure do |config|
-  config.authorization_token = ENV['KYCAID_AUTHORIZATION_TOKEN']
-  config.sandbox_mode = ENV['KYCAID_SANDBOX_MODE']
+KYCAIDPLUS.configure do |config|
+  config.authorization_token = ENV['KYCAIDPLUS_AUTHORIZATION_TOKEN']
+  config.sandbox_mode = ENV['KYCAIDPLUS_SANDBOX_MODE']
 end
 ```
 
@@ -37,5 +37,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/openware/ruby-kycaid.
+Bug reports and pull requests are welcome on GitHub at https://github.com/openware/ruby-kycaidplus.
 

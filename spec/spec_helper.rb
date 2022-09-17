@@ -7,7 +7,7 @@ SimpleCov.start do
 end
 
 require 'bundler/setup'
-require 'kycaid'
+require 'kycaidplus'
 require 'vcr'
 require 'pry'
 
@@ -24,11 +24,12 @@ RSpec.configure do |config|
 end
 
 VCR.configure do |config|
-  config.cassette_library_dir = 'spec/fixtures/kycaid_cassettes'
+  config.allow_http_connections_when_no_cassette = true
+  config.cassette_library_dir = 'spec/fixtures/kycaidplus_cassettes'
   config.hook_into :webmock
   config.ignore_localhost = true
   config.default_cassette_options = { match_requests_on: %i[method uri body], record: :new_episodes }
   config.configure_rspec_metadata!
 end
 
-KYCAID.configure
+KYCAIDPLUS.configure

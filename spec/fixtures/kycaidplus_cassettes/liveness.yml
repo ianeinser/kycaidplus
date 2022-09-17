@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.kycaid.com/forms/e26aeb4f012c19440f0ac11946e64da7787a/urls
+    body:
+      encoding: UTF-8
+      string: applicant_id=4d5ba38b00dcc94e0819bf77ea55846ee3c2&external_applicant_id=ID51B4464481&redirect_url=https%3A%2F%2Fwww.plutonext.com&sandbox=true
+    headers:
+      User-Agent:
+      - Faraday v1.10.2
+      Authorization:
+      - Token 3fed4d0900f5484a792b04541a541b483bda
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '182'
+      Etag:
+      - W/"b6-9HdyhCVg+jk8t75qDxgb62wY40Y"
+      Date:
+      - Sat, 17 Sep 2022 09:03:56 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+    body:
+      encoding: UTF-8
+      string: '{"form_id":"e26aeb4f012c19440f0ac11946e64da7787a","form_url":"https://forms.kycaid.com/201924a809e4194f33192c47d3067d53913f","verification_id":"2736d4b500bd3944071aff57d5b0410a131b"}'
+  recorded_at: Sat, 17 Sep 2022 09:03:56 GMT
+recorded_with: VCR 6.1.0
