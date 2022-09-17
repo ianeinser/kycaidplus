@@ -1,4 +1,4 @@
-# Ruby KYCAIDPLUS
+# KYCAIDPLUS
 
 Ruby gem to interact with KYC provider https://www.kycaid.com/
 
@@ -37,5 +37,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/openware/ruby-kycaidplus.
+Bug reports and pull requests are welcome on GitHub at https://github.com/ianeinser/kycaidplus.
 
