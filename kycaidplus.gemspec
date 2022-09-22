@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{kycaid.com ruby library.}
   spec.description   = %q{Support of core functionalities of the KYC provider kycaid.com}
-  spec.homepage      = "https://www.kycaid.com/"
+  spec.homepage      = "https://kycaid.com/"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["homepage_uri"] = spec.homepage

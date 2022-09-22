@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    kycaidplus (1.0.0)
+    kycaidplus (1.0.2)
       faraday
       faraday_middleware
       json

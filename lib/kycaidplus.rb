@@ -11,7 +11,7 @@ require "kycaidplus/file"
 require "kycaidplus/document"
 require "kycaidplus/address"
 require "kycaidplus/verification"
-require "kycaidplus/liveness"
+require "kycaidplus/liveness_check"
 
 # KYCAIDPLUS module contains wrappers around KYCAIDPLUS API.
 # See https://kycaid.com/
